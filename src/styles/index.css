@@ -1,0 +1,36 @@
+/* src/styles/index.css */
+.container{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 50%;
+    margin-inline: auto;
+}
+.check-list{
+    padding-left: 0;
+}
+.check-item{
+    display: flex;
+    gap: 10px;
+    /* justify-content: space-between; */
+    /* border: 1px black solid; */
+    margin-bottom: 10px;
+}
+.check-item .item-content{
+    flex: 1;
+    text-align: left;
+    margin: 0;
+}
+
+.check-item.checked{
+    opacity: 0.5;
+    }
+
+.check-item.checked .btn{
+    pointer-events: none;
+}
+
+.check-item.checked .item-content {
+    text-decoration: line-through;
+}
